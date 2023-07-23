@@ -15,8 +15,6 @@ import static org.junit.Assert.*;
  * Created by jt on 6/21/17.
  */
 public class IngredientToIngredientCommandTest {
-
-    public static final Recipe RECIPE = new Recipe();
     public static final BigDecimal AMOUNT = new BigDecimal("1");
     public static final String DESCRIPTION = "Cheeseburger";
     public static final String UOM_ID = "2";
@@ -45,7 +43,6 @@ public class IngredientToIngredientCommandTest {
         //given
         Ingredient ingredient = new Ingredient();
         ingredient.setId(ID_VALUE);
-        ingredient.setRecipe(RECIPE);
         ingredient.setAmount(AMOUNT);
         ingredient.setDescription(DESCRIPTION);
         ingredient.setUom(null);
@@ -63,7 +60,6 @@ public class IngredientToIngredientCommandTest {
         //given
         Ingredient ingredient = new Ingredient();
         ingredient.setId(ID_VALUE);
-        ingredient.setRecipe(RECIPE);
         ingredient.setAmount(AMOUNT);
         ingredient.setDescription(DESCRIPTION);
 
